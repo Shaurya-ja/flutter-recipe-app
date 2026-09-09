@@ -1,103 +1,11 @@
-# Recipe & Meal Planner
-
-A Flutter application for browsing meal categories, exploring recipes, and reading step-by-step cooking instructions. Data is retrieved live from [TheMealDB](https://www.themealdb.com/).
-
-## Features
-
-- Browse meal categories in a responsive grid.
-- View the recipes available within a selected category.
-- Read a recipe's image, category, and cooking instructions.
-- Mark a recipe as a favourite during the current session.
-- Clear loading, empty-state, and network-error feedback.
-
-## Implementation
-
-The app follows a small, maintainable feature structure:
-
-| Area | Responsibility |
-| --- | --- |
-| `lib/models/meal.dart` | Converts TheMealDB JSON into typed meal data. |
-| `lib/services/api_service.dart` | Makes API requests and validates responses. |
-| `lib/screens/category_screen.dart` | Displays categories and handles category selection. |
-| `lib/screens/meal_list_screen.dart` | Displays the meals in a category. |
-| `lib/screens/meal_detail_screen.dart` | Displays recipe details and the session favourite control. |
-
-The Android manifest includes the `INTERNET` permission required for live API calls.
-
-## Screenshots
-
-Capture and add genuine application screenshots to `docs/screenshots/` before submitting. Recommended frames are:
-
-1. **Categories** — the opening grid of meal categories.
-2. **Recipe list** — a selected category with recipe thumbnails.
-3. **Recipe details** — an individual recipe's image, category, instructions, and favourite action.
-
-After adding the files, embed them here using relative paths, for example:
-
-```md
-![Meal categories](docs/screenshots/categories.png)
-```
-
-## Demo video
-
-Record a 30–60 second walkthrough showing the category grid, selecting a category, opening a recipe, and toggling the favourite button. Upload the video to the repository's release or an approved video host, then add its link here before submission.
-
-## Prerequisites
-
-- [Flutter SDK](https://docs.flutter.dev/get-started/install) (Dart 3.13 or newer)
-- Android Studio and an Android emulator or connected Android device, for APK builds and mobile testing
-
-## Setup
-
-```bash
-git clone <your-repository-url>
-cd recipe-meal-planner-app
-flutter pub get
-```
-
-## Run the app
-
-Run on a connected device or emulator:
-
-```bash
-flutter run
-```
-
-For a browser preview:
-
-```bash
-flutter run -d chrome
-```
-
-The app needs an internet connection to retrieve meal data from TheMealDB.
-
-## Test
-
-```bash
-flutter test
-```
-
-## Build the Android APK
-
-```bash
-flutter build apk --release
-```
-
-The generated release APK is at:
-
-```text
-build/app/outputs/flutter-apk/app-release.apk
-```
-
-## Publish the required GitHub release
-
-1. Commit and push this project to GitHub.
-2. Add the demo-video link to this README and verify all screenshot links render on GitHub.
-3. Create and push a version tag, for example `v1.0.0`.
-4. The included **Build Android release** GitHub Actions workflow will test the project, build the APK, and attach it to the generated GitHub Release. Alternatively, create a Release manually and attach `build/app/outputs/flutter-apk/app-release.apk`.
-
-> Do not submit the APK solely through a cloud-drive link; attach it directly to the GitHub release.
-
-## Data source
-
-Recipe content and images are provided by [TheMealDB API](https://www.themealdb.com/api.php).
+🍳 Recipe & Meal Planner AppA cross-platform recipe discovery application built with Flutter and Dart. This project fetches real-time data from TheMealDB API to allow users to explore food categories, browse recipes, view detailed step-by-step cooking instructions, and mark their favorite dishes.📥 Download APKYou can download the pre-compiled Android APK directly from the Releases section:Download v1.0.0 APK🎥 Demo Video & Screenshots📹 Video Demo: Watch the Project WalkthroughApplication PreviewCategories ScreenRecipe List ScreenRecipe Details Screen🚀 Key FeaturesCategory Explorer: Browse diverse food categories in an adaptive, responsive grid view.Dynamic Recipe Feeds: Fetch live lists of recipes corresponding to selected categories.Detailed Recipe Views: View high-resolution dish previews, category tags, and comprehensive step-by-step cooking instructions.Interactive Session Favorites: Toggle recipe favorites dynamically with immediate state updates and visual feedback during your session.Resilient User Experience: Smooth loading indicators, empty states, and clear network error handling.🛠️ Tech Stack & ArchitectureFramework: Flutter (Dart 3.13 or newer)Networking: http package for RESTful API consumptionData Source: TheMealDB Open-Source REST APIState Management: Native StatefulWidget & setState()Asynchronous Rendering: FutureBuilder for seamless asynchronous API fetchingThe app follows a small, maintainable feature structure:AreaResponsibilitylib/models/meal.dartConverts TheMealDB JSON into typed meal data.lib/services/api_service.dartMakes API requests and validates responses.lib/screens/category_screen.dartDisplays categories and handles category selection.lib/screens/meal_list_screen.dartDisplays the meals in a category.lib/screens/meal_detail_screen.dartDisplays recipe details and the session favourite control.Plaintextlib/
+├── models/
+│   └── meal.dart           # Typed data modeling & JSON deserialization
+├── services/
+│   └── api_service.dart    # Asynchronous REST API service & validation
+├── screens/
+│   ├── category_screen.dart    # Home grid view for meal categories
+│   ├── meal_list_screen.dart   # List view for selected category meals
+│   └── meal_detail_screen.dart # Detailed recipe view & session favorite state
+└── main.dart               # App entrypoint & Material theme configuration
+💻 Setup & InstallationPrerequisitesFlutter SDK (Dart 3.13 or newer)Android Studio with an Android emulator or connected physical Android deviceActive internet connection (required for live API calls)

@@ -17,7 +17,7 @@ You can download the pre-compiled Android APK directly from the Releases section
 ### Application Preview
 | Categories Screen | Recipe List Screen | Recipe Details Screen |
 | :---: | :---: | :---: |
-| <img src="docs/screenshots/categories.png" width="250"/> | <img src="docs/screenshots/recipe_list.png" width="250"/> | <img src="docs/screenshots/recipe_details.png" width="250"/> |
+| <img src="docs/screenshots/categories.png" width="250"/> | <img src="docs/screenshots/meal-list.png" width="250"/> | <img src="docs/screenshots/recipe-detail.png" width="250"/> |
 
 ---
 

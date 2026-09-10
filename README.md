@@ -6,7 +6,7 @@ A cross-platform recipe discovery application built with **Flutter** and **Dart*
 
 ## 📥 Download APK
 You can download the pre-compiled Android APK directly from the Releases section:
-* [**Download v1.0.0 APK**](https://github.com/YOUR_GITHUB_USERNAME/recipe-meal-planner-app/releases/download/v1.0.0/app-release.apk)
+* [**Download v1.0.0 APK**](https://github.com/Shaurya-ja/recipe-meal-planner-app/releases/download/v1.0.0/app-release.apk)
 
 ---
 

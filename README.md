@@ -12,7 +12,7 @@ You can download the pre-compiled Android APK directly from the Releases section
 
 ## Demo Video & Screenshots
 
-* 📹 **Video Demo:** [Watch the Project Walkthrough](YOUR_VIDEO_DEMO_LINK_HERE)
+* 📹 **Video Demo:** [Watch the Project Walkthrough](docs/Demo_Video.mp4)
 
 ### Application Preview
 | Categories Screen | Recipe List Screen | Recipe Details Screen |
